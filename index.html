@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Panca Express | PT Panca Laksindo Express</title>
+<style>
+:root{--navy:#071c3b;--blue:#0d5bc6;--orange:#f5a623;--light:#f5f8fc;--muted:#6d7888}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;color:#172337;line-height:1.6}a{text-decoration:none;color:inherit}
+.container{max-width:1160px;margin:auto;padding:0 22px}
+.top{background:var(--navy);color:#dce7f5;font-size:13px;padding:10px 0}.top .container{display:flex;justify-content:space-between}
+header{background:#fff;position:sticky;top:0;z-index:9;box-shadow:0 3px 20px #0001}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:21px;color:var(--navy)}.logo{background:var(--blue);color:#fff;padding:12px;border-radius:12px}
+.links{display:flex;gap:25px;align-items:center;font-size:14px;font-weight:bold}.links a:hover{color:var(--blue)}
+.cta{background:var(--orange);padding:12px 18px;border-radius:9px;color:#111}.menu{display:none;background:none;border:0;font-size:28px}
+.hero{min-height:610px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,#061c3bf2,#0b3e77b8,#0b3e7760),url("https://images.unsplash.com/photo-1586528116493-da8b6f2e7a6f?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero h1{font-size:clamp(43px,6vw,70px);line-height:1.05;max-width:800px;letter-spacing:-2px;margin:15px 0}.hero p{max-width:650px;font-size:18px;color:#dce7f5}.kicker,.eyebrow{color:#f8c45e;font-weight:bold;letter-spacing:2px;text-transform:uppercase;font-size:13px}
+.buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}.btn{padding:14px 22px;border-radius:10px;font-weight:bold}.primary{background:var(--orange);color:#111}.secondary{border:1px solid #fff5;background:#fff1;color:#fff}
+.stats{margin-top:-40px;position:relative}.statbox{background:#fff;border-radius:17px;box-shadow:0 15px 45px #12365d20;display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:25px;border-right:1px solid #e5ebf2}.stat:last-child{border:0}.stat b{display:block;color:var(--blue);font-size:24px}.stat span{font-size:13px;color:var(--muted)}
+section{padding:90px 0}.eyebrow{color:var(--blue);letter-spacing:2px}h2{font-size:clamp(34px,5vw,52px);line-height:1.1;color:var(--navy);margin:9px 0 15px;letter-spacing:-1px}.intro{color:var(--muted);max-width:690px;font-size:17px}
+.about,.why{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.photo{min-height:390px;border-radius:23px;background:url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=1200&q=85") center/cover}
+.checks{list-style:none;margin-top:22px}.checks li{margin:11px 0;font-weight:bold}.checks li:before{content:"✓";color:var(--blue);margin-right:10px}
+.services{background:var(--light)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:17px;margin-top:35px}.card{background:#fff;padding:26px;border:1px solid #e4ebf3;border-radius:17px}.icon{font-size:24px;color:var(--blue);margin-bottom:15px}.card h3{color:var(--navy);margin-bottom:7px}.card p{color:var(--muted);font-size:14px}
+.dark{background:var(--navy);color:#fff}.dark h2{color:#fff}.dark .intro{color:#c0cee0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:35px}.step{border:1px solid #fff2;padding:25px;border-radius:15px;background:#fff08}.step b{color:#f8c45e}
+.contact{background:var(--light)}.contactbox{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contactcard{background:#fff;border:1px solid #e4ebf3;border-radius:18px;padding:28px}.item{margin:15px 0}.item small{display:block;color:var(--muted);text-transform:uppercase;font-size:11px;letter-spacing:1px}.item b{color:var(--navy)}
+footer{background:#04152d;color:#aebdd0;padding:30px 0}footer .container{display:flex;justify-content:space-between}
+.float{position:fixed;right:20px;bottom:20px;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:22px;z-index:10}
+@media(max-width:850px){.links{display:none}.menu{display:block}.cards,.steps{grid-template-columns:1fr 1fr}.about,.why,.contactbox{grid-template-columns:1fr}}
+@media(max-width:550px){.top .container{display:block}.statbox{grid-template-columns:1fr 1fr}.stat{padding:18px}.hero{min-height:580px}.hero h1{font-size:44px}.cards,.steps{grid-template-columns:1fr}section{padding:70px 0}.photo{min-height:300px}footer .container{display:block}}
+</style>
+</head>
+<body>
+<div class="top"><div class="container"><span>PT Panca Laksindo Express</span><span>021 - 72741027 / 021 - 72741140</span></div></div>
+<header><div class="container nav">
+<a class="brand" href="#home"><span class="logo">PLE</span><span>Panca Express</span></a>
+<nav class="links"><a href="#tentang">Tentang Kami</a><a href="#layanan">Layanan</a><a href="#keunggulan">Keunggulan</a><a href="#kontak">Kontak</a><a class="cta" href="#kontak">Hubungi Kami</a></nav>
+<button class="menu">☰</button>
+</div></header>
+
+<section class="hero" id="home"><div class="container">
+<div class="kicker">Courier • Cargo • Logistics</div>
+<h1>Solusi logistik yang cepat, aman, dan terpercaya.</h1>
+<p>PT Panca Laksindo Express membantu kebutuhan pengiriman bisnis melalui layanan transportasi dan logistik yang terintegrasi.</p>
+<div class="buttons"><a class="btn primary" href="#kontak">Konsultasi Pengiriman →</a><a class="btn secondary" href="#layanan">Lihat Layanan</a></div>
+</div></section>
+
+<div class="stats"><div class="container"><div class="statbox">
+<div class="stat"><b>24/7</b><span>Dukungan pelanggan</span></div><div class="stat"><b>Fast</b><span>Pengiriman efisien</span></div><div class="stat"><b>Real-Time</b><span>Visibilitas pengiriman</span></div><div class="stat"><b>Global</b><span>Jaringan pengiriman</span></div>
+</div></div></div>
+
+<section id="tentang"><div class="container about"><div class="photo"></div><div>
+<div class="eyebrow">Tentang Kami</div><h2>Partner logistik untuk kebutuhan pengiriman Anda.</h2>
+<p class="intro">PT Panca Laksindo Express (PLE) adalah perusahaan kurir dan cargo yang menyediakan solusi pengiriman untuk kebutuhan bisnis.</p>
+<ul class="checks"><li>Layanan pengiriman fleksibel</li><li>Proses kerja terstruktur</li><li>Dukungan pelanggan responsif</li><li>Solusi logistik untuk bisnis</li></ul>
+</div></div></section>
+
+<section class="services" id="layanan"><div class="container">
+<div class="eyebrow">Produk & Layanan</div><h2>Layanan pengiriman untuk berbagai kebutuhan.</h2><p class="intro">Solusi pengiriman berdasarkan jenis barang, tujuan, dan kebutuhan operasional.</p>
+<div class="cards">
+<div class="card"><div class="icon">✈</div><h3>Air Freight</h3><p>Pengiriman jalur udara untuk kebutuhan yang mengutamakan kecepatan.</p></div>
+<div class="card"><div class="icon">⚓</div><h3>Sea Freight</h3><p>Pengiriman jalur laut untuk cargo dan volume yang lebih besar.</p></div>
+<div class="card"><div class="icon">▣</div><h3>Road Transport</h3><p>Transportasi darat untuk pengiriman dan distribusi domestik.</p></div>
+<div class="card"><div class="icon">↗</div><h3>Door to Door</h3><p>Pengiriman dari lokasi pengirim sampai tujuan dengan proses praktis.</p></div>
+</div></div></section>
+
+<section id="keunggulan"><div class="container why"><div class="photo"></div><div>
+<div class="eyebrow">Kenapa Memilih Kami</div><h2>Logistik yang dikelola dengan lebih efisien.</h2><p class="intro">Fokus pada kecepatan, keamanan, komunikasi, dan kemudahan dalam proses pengiriman.</p>
+<ul class="checks"><li>24/7 Customer Support</li><li>Fast & Efficient Delivery</li><li>Real-Time Tracking</li><li>Easy Payment Methods</li></ul>
+</div></div></section>
+
+<section class="dark"><div class="container"><div class="eyebrow">Alur Pengiriman</div><h2>Proses sederhana dari awal sampai tujuan.</h2><p class="intro">Setiap tahap diproses secara teratur untuk membantu pengiriman berjalan lancar.</p>
+<div class="steps"><div class="step"><b>01</b><h3>Pemesanan</h3><p>Detail barang dan pengiriman dikonfirmasi.</p></div><div class="step"><b>02</b><h3>Persiapan</h3><p>Barang diperiksa dan dipersiapkan.</p></div><div class="step"><b>03</b><h3>Transportasi</h3><p>Barang dikirim melalui jalur yang sesuai.</p></div><div class="step"><b>04</b><h3>Konfirmasi</h3><p>Status dan hasil pengiriman diinformasikan.</p></div></div></div></section>
+
+<section class="contact" id="kontak"><div class="container contactbox"><div>
+<div class="eyebrow">Hubungi Kami</div><h2>Siap mengatur pengiriman Anda?</h2><p class="intro">Hubungi tim Panca Express untuk kebutuhan pengiriman dan layanan logistik.</p>
+</div><div class="contactcard">
+<div class="item"><small>Perusahaan</small><b>PT PANCA LAKSINDO EXPRESS</b></div>
+<div class="item"><small>Alamat</small><b>26 Jl. Kalibata Utara II, Duren Tiga, Kota Administrasi Jakarta Selatan, 12740, Indonesia</b></div>
+<div class="item"><small>Telepon</small><b>021 - 72741027 / 021 - 72741140</b></div>
+<div class="item"><small>Email</small><b>cs@panca-express.com</b></div>
+</div></div></section>
+<footer><div class="container"><span>© 2026 PT Panca Laksindo Express</span><span>Panca Express • Jakarta, Indonesia</span></div></footer>
+<a class="float" href="mailto:cs@panca-express.com">✉</a>
+</body></html>
